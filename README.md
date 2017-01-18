@@ -9,7 +9,7 @@ http://remotemessages.com
 
 ##What is this project?
 
-You can send iMessage trough Remote Messages app from PHP. I am planning to send status messages from my Domoticz server.
+You will be able to iMessage trough Remote Messages app from PHP. I am planning to send status messages from my Domoticz server.
 
 ##What you need to send iMessages from Linux, Windows, Mac OS X from CLI or from your projects?
 
