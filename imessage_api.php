@@ -1,13 +1,14 @@
 <?php
 
-//TEST: http://localhost/imessage.php?message=TEST
+//TEST: http://localhost/imessage.php?telephone=+421911123543&message=TEST
+
+// +421xxx international format
+$tel = urlencode($_GET["telephone"]);
 
 //message
 $message = $_GET["message"];
 
-// +421xxx international format
-$tel = $_GET["telephone"];
-
+//echo "t: " .$tel . "m: " . $message . "//";
 
 /* generate reqUID */
 function random() {
@@ -17,7 +18,7 @@ function random() {
 $random = "0000".(random()*pow(36,4) << 0);
 $yo = base_convert($random, 10, 36);
 $reqUID = substr($yo, -4);
-echo $reqUID;
+//echo $reqUID;
 
 /******************/
 
