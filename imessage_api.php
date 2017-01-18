@@ -1,5 +1,14 @@
 <?php
 
+//TEST: http://localhost/imessage.php?message=TEST
+
+//message
+$message = $_GET["message"];
+
+// +421xxx international format
+$tel = $_GET["telephone"];
+
+
 /* generate reqUID */
 function random() {
   return (float)rand()/(float)getrandmax();
@@ -8,6 +17,9 @@ function random() {
 $random = "0000".(random()*pow(36,4) << 0);
 $yo = base_convert($random, 10, 36);
 $reqUID = substr($yo, -4);
+echo $reqUID;
+
+/******************/
 
 //Quick example to send hello:
 //hashid = TELEPHONE NUMBER
@@ -16,11 +28,11 @@ $reqUID = substr($yo, -4);
 //text = text
 
 $post_data = array(
-    'hashid' => '',
+    'hashid' => $tel,
     'reqUID' => $reqUID,
     'recipients' => '',
     'file-name' => '',
-    'text' => 'hello world',
+    'text' => $message,
 );
 
 $url = 'http://192.168.1.16:333/sendMessage.srv';

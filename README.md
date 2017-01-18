@@ -15,3 +15,11 @@ You will be able to send iMessage trough Remote Messages app from PHP. I am plan
 
 1. an  iPhone with installed Remote Messages app.
 2. write your own code based on mine
+
+Regards,  
+Adrian Mihalko  
+www.mihalko.eu
+
+p.s:
+I **LOVE** coffee! Buy me a coffee at:   
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=adriankoooo%40gmail%2ecom&lc=SK&item_name=Adrian%20Mihalko&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
